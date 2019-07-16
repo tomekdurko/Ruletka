@@ -8,6 +8,15 @@ public class Zeton {
         wspX=X;
         wspY=Y;
     }
+
+    public int getWspX() {
+        return wspX;
+    }
+
+    public int getWspY() {
+        return wspY;
+    }
+
     public static int znajdzX(int wylosowanaLiczba)
     {
         int x;

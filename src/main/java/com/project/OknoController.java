@@ -29,11 +29,16 @@ public class OknoController {
         gc.drawImage(zeton, wspX,wspY,ZETON_W,ZETON_W);
     }
 
+    void rysujZetonZObiektu(Zeton zeton)
+    {
+        rysujZeton(zeton.getWspX(),zeton.getWspY());
+    }
+
     public void rysujPrzycisk(ActionEvent actionEvent) {
         GraphicsContext gc;
         gc = canvas.getGraphicsContext2D();
         Image zeton = new Image("zeton.png");
-        gc.drawImage(zeton, 80,85,50,50);
+        rysujZeton(10,0);
         czasStart = Instant.now();
 
     }
