@@ -22,6 +22,16 @@ public class Main extends Application {
 
 
     public static void main(String[] args) {
+        Zeton z1 = new Zeton(15,1);
+        System.out.println(z1.wygrana(15));
+        Zeton z2 = new Zeton(12,3);
+        System.out.println(z2.wygrana(15));
+        Zeton z3 = new Zeton(10,2);
+        System.out.println(z3.wygrana(15));
+        Zeton z4 = new Zeton(8,5);
+        System.out.println(z4.wygrana(15));
+        Zeton z5 = new Zeton(11,5);
+        System.out.println(z5.wygrana(15));
         launch(args);
     }
 }
