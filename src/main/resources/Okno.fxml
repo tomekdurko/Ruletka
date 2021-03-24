@@ -24,7 +24,7 @@
          <font>
             <Font size="20.0" />
          </font></Text>
-      <Canvas height="89.0" layoutX="1082.0" layoutY="5.0" width="85.0" />
+      <Canvas fx:id="wypadloCanvas" height="89.0" layoutX="1082.0" layoutY="5.0" width="85.0" />
       <Text layoutX="977.0" layoutY="58.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Wypadło" wrappingWidth="84.99998450279236">
          <font>
             <Font name="System Bold Italic" size="20.0" />

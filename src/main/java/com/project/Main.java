@@ -7,6 +7,7 @@ import javafx.scene.Scene;
 import javafx.stage.Stage;
 
 import java.io.IOException;
+import java.util.*;
 
 public class Main extends Application {
     @Override
@@ -19,8 +20,6 @@ public class Main extends Application {
         primaryStage.setScene(new Scene(content, 1400, 500));
         primaryStage.show();
     }
-
-
     public static void main(String[] args) {
         Zeton z1 = new Zeton(15,1);
         System.out.println(z1.wygrana(15));
@@ -33,5 +32,7 @@ public class Main extends Application {
         Zeton z5 = new Zeton(11,5);
         System.out.println(z5.wygrana(15));
         launch(args);
+
+
     }
 }

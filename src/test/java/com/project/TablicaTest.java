@@ -16,6 +16,7 @@ class TablicaTest {
     public void setUp()
     {
         testTablica = new Tablica();
+        testTablica.setWylosowanaLiczba(15);
         testTablica.dodajZeton(15,1);
         testTablica.dodajZeton(12,3);
         testTablica.dodajZeton(10,2);
@@ -26,7 +27,7 @@ class TablicaTest {
 
     @Test
     void wygranaDlaTablicy() {
-        assertEquals(22 , testTablica.wygranaDlaTablicy(15));
+        assertEquals(22 , testTablica.wygranaDlaTablicy());
     }
 
     @Test
@@ -36,6 +37,8 @@ class TablicaTest {
         } catch (FileNotFoundException e) {
             e.printStackTrace();
         }
-        assertEquals(22, pustaTablica.wygranaDlaTablicy(15) );
+        assertEquals(22, pustaTablica.wygranaDlaTablicy() );
     }
+
+
 }
